@@ -1,0 +1,75 @@
+{
+  "name": "env-validator",
+  "version": "0.1.0",
+  "description": "Validate process.env at startup with a typed schema. Collects all errors at once, TypeScript inference built-in, zero dependencies.",
+  "author": "",
+  "license": "MIT",
+  "homepage": "https://github.com/seu-usuario/env-validator#readme",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/seu-usuario/env-validator.git"
+  },
+  "bugs": {
+    "url": "https://github.com/seu-usuario/env-validator/issues"
+  },
+  "keywords": [
+    "env",
+    "environment",
+    "environment-variables",
+    "process-env",
+    "validator",
+    "validation",
+    "schema",
+    "config",
+    "configuration",
+    "typescript",
+    "type-safe",
+    "dotenv",
+    "runtime-validation",
+    "startup",
+    "12-factor",
+    "zero-dependencies",
+    "lightweight",
+    "nextjs",
+    "express",
+    "fastify"
+  ],
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      },
+      "require": {
+        "types": "./dist/index.d.cts",
+        "default": "./dist/index.cjs"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "dev": "tsup --watch",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build && npm test"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.0",
+    "tsup": "^8.3.0",
+    "typescript": "^5.7.0",
+    "vitest": "^3.0.0"
+  }
+}
