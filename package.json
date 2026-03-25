@@ -1,16 +1,16 @@
 {
-  "name": "env-validator",
+  "name": "@azlabs/env-validator",
   "version": "0.1.0",
   "description": "Validate process.env at startup with a typed schema. Collects all errors at once, TypeScript inference built-in, zero dependencies.",
   "author": "",
   "license": "MIT",
-  "homepage": "https://github.com/seu-usuario/env-validator#readme",
+  "homepage": "https://github.com/matheusPavaneli/env-validator#readme",
   "repository": {
     "type": "git",
-    "url": "https://github.com/seu-usuario/env-validator.git"
+    "url": "https://github.com/matheusPavaneli/env-validator.git"
   },
   "bugs": {
-    "url": "https://github.com/seu-usuario/env-validator/issues"
+    "url": "https://github.com/matheusPavaneli/env-validator/issues"
   },
   "keywords": [
     "env",
