@@ -2,7 +2,7 @@
   "name": "@azlabs/env-validator",
   "version": "0.1.0",
   "description": "Validate process.env at startup with a typed schema. Collects all errors at once, TypeScript inference built-in, zero dependencies.",
-  "author": "",
+  "author": "Matheus Pavaneli - @azlabs",
   "license": "MIT",
   "homepage": "https://github.com/matheusPavaneli/env-validator#readme",
   "repository": {
