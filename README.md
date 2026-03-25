@@ -1,4 +1,4 @@
-# env-validator
+# @azlabs/env-validator
 
 Tiny, typed environment variable validator for Node.js.
 
@@ -7,13 +7,13 @@ Tiny, typed environment variable validator for Node.js.
 ## Install
 
 ```bash
-npm install env-validator
+npm install @azlabs/env-validator
 ```
 
 ## Usage
 
 ```typescript
-import { env, str, num, bool, port } from 'env-validator'
+import { env, str, num, bool, port } from '@azlabs/env-validator'
 
 export const config = env({
   PORT:         port().default(3000),
